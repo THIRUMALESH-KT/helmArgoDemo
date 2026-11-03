@@ -74,13 +74,13 @@ ingress:
               name: test
               port:
                 number: 80
-         - path: /httpd
-           pathType: Prefix
-           backend:
-             service:
-               name: httpd
-               port:
-                 number: 80
+        - path: /httpd
+          pathType: Prefix
+          backend:
+            service:
+              name: httpd
+              port:
+                number: 80
   tls: []
     # - secretName: chart-example-tls
     #   hosts:
